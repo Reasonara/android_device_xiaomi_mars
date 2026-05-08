@@ -32,3 +32,6 @@ AXION_MAINTAINER := Dipsan
 
 # Processor name (underscores become spaces)
 AXION_PROCESSOR := Snapdragon_888
+
+TARGET_DISABLE_EPPE := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
