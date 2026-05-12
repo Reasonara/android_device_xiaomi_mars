@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/halsn.conf
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -29,7 +29,3 @@ PRODUCT_SOONG_NAMESPACES += \
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/mars/mars-vendor.mk)
 
-TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_ENABLE_BLUR := true
-TARGET_INCLUDE_AXFX := true
