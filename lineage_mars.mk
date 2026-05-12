@@ -22,3 +22,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=mars
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+TARGET_CUSTOM_UDFPS := true
+USE_REALITY_ENGINE := true
+SURFACE_FLINGER_BOOST := true
+
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+TARGET_SUPPORTS_GOOGLE_TELEPHONY := false
+WITH_GMS := true
