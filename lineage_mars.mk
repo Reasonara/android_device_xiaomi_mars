@@ -22,11 +22,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=mars
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-TARGET_CUSTOM_UDFPS := true
-USE_REALITY_ENGINE := true
-SURFACE_FLINGER_BOOST := true
+# Camera information (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 50,48,48
+AXION_CAMERA_FRONT_INFO := 20
 
-$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
-$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
-TARGET_SUPPORTS_GOOGLE_TELEPHONY := false
-WITH_GMS := true
+# Maintainer name (underscores become spaces in the UI)
+AXION_MAINTAINER := Dipsan
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Snapdragon_888
