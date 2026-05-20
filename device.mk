@@ -28,5 +28,4 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/mars/mars-vendor.mk)
-TARGET_INCLUDE_AXFX := trueTARGET_ENABLE_BLUR := true
 
