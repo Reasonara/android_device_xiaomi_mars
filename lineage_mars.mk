@@ -22,12 +22,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=mars
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-# Camera information (multiple sensors supported)
-AXION_CAMERA_REAR_INFO := 50,48,48
-AXION_CAMERA_FRONT_INFO := 20
-
-# Maintainer name (underscores become spaces in the UI)
-AXION_MAINTAINER := Dipsan
-
-# Processor name (underscores become spaces)
-AXION_PROCESSOR := Snapdragon_888
