@@ -34,4 +34,3 @@ TARGET_ENABLE_BLUR := true
 TARGET_TOUCH_BOOST_SUPPORTED := trueTARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TORCH_STR_SUPPORTED := true
-BYPASS_CHARGE_SUPPORTED := true
