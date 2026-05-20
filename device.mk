@@ -29,15 +29,3 @@ PRODUCT_SOONG_NAMESPACES += \
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/mars/mars-vendor.mk)
 
-
-# Axion Stuff
-AXION_CAMERA_REAR_INFO := 50,48,48
-AXION_CAMERA_FRONT_INFO := 20
-AXION_PROCESSOR := Snapdragon_888
-AXION_MAINTAINER := Dipsan
-TARGET_INCLUDES_LOS_PREBUILTS := true
-TARGET_INCLUDE_AXFX := true
-TARGET_ENABLE_BLUR := true
-TARGET_TOUCH_BOOST_SUPPORTED := true
-TORCH_STR_SUPPORTED := true
-BYPASS_CHARGE_SUPPORTED := true
