@@ -24,13 +24,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Axion Stuff
-AXION_CAMERA_REAR_INFO := 50,48,48
-AXION_CAMERA_FRONT_INFO := 20
-AXION_PROCESSOR := Snapdragon_888
-AXION_MAINTAINER := Dipsan
-TARGET_INCLUDES_LOS_PREBUILTS := true
-TARGET_INCLUDE_AXFX := true
-TARGET_ENABLE_BLUR := true
-TARGET_TOUCH_BOOST_SUPPORTED := trueTARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TORCH_STR_SUPPORTED := true
+TARGET_CUSTOM_UDFPS := true
+WITH_GMS := true
+USE_REALITY_ENGINE := true
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
+SURFACE_FLINGER_BOOST := true
